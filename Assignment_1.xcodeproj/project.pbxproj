@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4820CAFD2C2316C8008B12B5 /* Assignment_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820CAFC2C2316C8008B12B5 /* Assignment_1App.swift */; };
-		4820CAFF2C2316C8008B12B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820CAFE2C2316C8008B12B5 /* ContentView.swift */; };
+		4820CAFF2C2316C8008B12B5 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820CAFE2C2316C8008B12B5 /* WelcomeView.swift */; };
 		4820CB012C2316CA008B12B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4820CB002C2316CA008B12B5 /* Assets.xcassets */; };
 		4820CB042C2316CA008B12B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4820CB032C2316CA008B12B5 /* Preview Assets.xcassets */; };
 		4820CB0E2C2316CA008B12B5 /* Assignment_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820CB0D2C2316CA008B12B5 /* Assignment_1Tests.swift */; };
 		4820CB182C2316CA008B12B5 /* Assignment_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820CB172C2316CA008B12B5 /* Assignment_1UITests.swift */; };
 		4820CB1A2C2316CA008B12B5 /* Assignment_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820CB192C2316CA008B12B5 /* Assignment_1UITestsLaunchTests.swift */; };
+		486355E42C26200B007939F2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486355E32C262008007939F2 /* LoginView.swift */; };
+		489DCF852C25CB590061C60B /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DCF842C25CB530061C60B /* SignupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		4820CAF92C2316C8008B12B5 /* Assignment_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4820CAFC2C2316C8008B12B5 /* Assignment_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_1App.swift; sourceTree = "<group>"; };
-		4820CAFE2C2316C8008B12B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4820CAFE2C2316C8008B12B5 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		4820CB002C2316CA008B12B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4820CB032C2316CA008B12B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4820CB092C2316CA008B12B5 /* Assignment_1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment_1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		4820CB132C2316CA008B12B5 /* Assignment_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4820CB172C2316CA008B12B5 /* Assignment_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_1UITests.swift; sourceTree = "<group>"; };
 		4820CB192C2316CA008B12B5 /* Assignment_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		486355E32C262008007939F2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		489DCF842C25CB530061C60B /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				4820CAFC2C2316C8008B12B5 /* Assignment_1App.swift */,
-				4820CAFE2C2316C8008B12B5 /* ContentView.swift */,
+				4820CAFE2C2316C8008B12B5 /* WelcomeView.swift */,
+				489DCF842C25CB530061C60B /* SignupView.swift */,
+				486355E32C262008007939F2 /* LoginView.swift */,
 				4820CB002C2316CA008B12B5 /* Assets.xcassets */,
 				4820CB022C2316CA008B12B5 /* Preview Content */,
 			);
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4820CAFF2C2316C8008B12B5 /* ContentView.swift in Sources */,
+				489DCF852C25CB590061C60B /* SignupView.swift in Sources */,
+				4820CAFF2C2316C8008B12B5 /* WelcomeView.swift in Sources */,
+				486355E42C26200B007939F2 /* LoginView.swift in Sources */,
 				4820CAFD2C2316C8008B12B5 /* Assignment_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
