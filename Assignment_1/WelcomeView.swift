@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 struct WelcomeView: View {
+    @State private var googleSignInCoordinator = GoogleSignInCoordinator()
+
     var body: some View {
         NavigationView {
             VStack {
@@ -57,6 +60,7 @@ struct WelcomeView: View {
                     HStack {
                         Button(action: {
                             print("Google signin")
+                            googleSignInCoordinator.makeCoordinator().signIn()
                         }) {
                             Image("google_logo")
                                 .resizable()
