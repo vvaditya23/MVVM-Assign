@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleSignIn
+import Firebase
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
@@ -17,6 +18,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 // Show the app's signed-in state.
             }
         }
+        FirebaseApp.configure()
         return true
     }
     

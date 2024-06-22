@@ -42,7 +42,7 @@ struct WelcomeView: View {
                 Spacer()
                 
                 HStack {
-                    NavigationLink(destination: SignupView()) {
+                    NavigationLink(destination: SignUpView()) {
                         HStack {
                             Image(systemName: "arrow.right")
                                 .foregroundColor(.white)

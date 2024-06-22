@@ -7,13 +7,8 @@
 
 import SwiftUI
 
-struct SignupView: View {
-    @State private var fullName: String = ""
-    @State private var email: String = ""
-    @State private var password: String = ""
-    @State private var phoneNumber: String = ""
-    @State private var showNameToAll: Bool = true
-    @State private var privacySetting: Int = 0
+struct SignUpView: View {
+    @StateObject private var viewModel = SignUpViewModel()
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -22,12 +17,12 @@ struct SignupView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.black)
             
-            TextField("Enter Full Name", text: $fullName)
+            TextField("Enter Full Name", text: $viewModel.fullName)
                 .padding()
                 .background(Color.gray.opacity(0.1))
                 .cornerRadius(10)
             
-            Toggle(isOn: $showNameToAll) {
+            Toggle(isOn: $viewModel.showNameToAll) {
                 VStack(alignment: .leading) {
                     Text("Show my name to all")
                     Text("If you turn off, you won't be able to see name of other members")
@@ -39,17 +34,19 @@ struct SignupView: View {
             .background(Color.gray.opacity(0.1))
             .cornerRadius(10)
             
-            TextField("Enter Email", text: $email)
+            TextField("Enter Email", text: $viewModel.email)
+                .padding()
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(10)
+                .keyboardType(.emailAddress)
+                .textCase(.lowercase)
+            
+            SecureField("Enter Password", text: $viewModel.password)
                 .padding()
                 .background(Color.gray.opacity(0.1))
                 .cornerRadius(10)
             
-            SecureField("Enter Password", text: $password)
-                .padding()
-                .background(Color.gray.opacity(0.1))
-                .cornerRadius(10)
-            
-            TextField("Enter Phone Number", text: $phoneNumber)
+            TextField("Enter Phone Number", text: $viewModel.phoneNumber)
                 .padding()
                 .background(Color.gray.opacity(0.1))
                 .cornerRadius(10)
@@ -58,7 +55,7 @@ struct SignupView: View {
                 .font(.headline)
                 .foregroundColor(.black)
             
-            Picker(selection: $privacySetting, label: Text("")) {
+            Picker(selection: $viewModel.privacySetting, label: Text("")) {
                 Text("Show to all").tag(0)
                 Text("Hide from all").tag(1)
                 Text("Show to the members I express interest in").tag(2)
@@ -71,9 +68,9 @@ struct SignupView: View {
             Spacer()
             
             Button(action: {
-                print("Next tapped")
+                viewModel.signUp()
             }) {
-                Text("Next")
+                Text("SignUp")
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                     .frame(minWidth: 0, maxWidth: .infinity)
@@ -83,9 +80,12 @@ struct SignupView: View {
             }
         }
         .padding()
+        .alert(isPresented: $viewModel.showAlert) {
+            Alert(title: Text(viewModel.alertTitle), message: Text(viewModel.alertBody), dismissButton: .default(Text("Okay")))
+        }
     }
 }
 
 #Preview {
-    SignupView()
+    SignUpView()
 }

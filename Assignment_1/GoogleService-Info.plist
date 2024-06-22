@@ -6,9 +6,29 @@
 	<string>606088838846-8dg35hkpp28k2jot7h3mdhue5iphpj9k.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
 	<string>com.googleusercontent.apps.606088838846-8dg35hkpp28k2jot7h3mdhue5iphpj9k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC9tO3oFvSfJUE_Z8cdYMK0nii7lRU0No8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>606088838846</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.techie.Assignment-1</string>
+	<key>PROJECT_ID</key>
+	<string>signup-login-demo-427121</string>
+	<key>STORAGE_BUCKET</key>
+	<string>signup-login-demo-427121.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:606088838846:ios:fa6d86b86e2da1bc0468ef</string>
 </dict>
 </plist>
