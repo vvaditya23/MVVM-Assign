@@ -119,12 +119,9 @@
 				486355F02C263687007939F2 /* Assignment-1-Info.plist */,
 				486355EA2C262C3C007939F2 /* AppDelegate.swift */,
 				4820CAFC2C2316C8008B12B5 /* Assignment_1App.swift */,
-				4820CAFE2C2316C8008B12B5 /* WelcomeView.swift */,
+				48AF64262C271D7D00FD52E5 /* Views */,
 				486355EE2C2634AC007939F2 /* UIViewRepresentable.swift */,
-				489DCF842C25CB530061C60B /* SignUpView.swift */,
-				48256A132C2709F8001B9499 /* SignUpViewModel.swift */,
-				486355E32C262008007939F2 /* LoginView.swift */,
-				48AF64242C27142600FD52E5 /* LoginViewModel.swift */,
+				48AF64272C271D8E00FD52E5 /* ViewModels */,
 				4820CB002C2316CA008B12B5 /* Assets.xcassets */,
 				4820CB022C2316CA008B12B5 /* Preview Content */,
 			);
@@ -154,6 +151,25 @@
 				4820CB192C2316CA008B12B5 /* Assignment_1UITestsLaunchTests.swift */,
 			);
 			path = Assignment_1UITests;
+			sourceTree = "<group>";
+		};
+		48AF64262C271D7D00FD52E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4820CAFE2C2316C8008B12B5 /* WelcomeView.swift */,
+				489DCF842C25CB530061C60B /* SignUpView.swift */,
+				486355E32C262008007939F2 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48AF64272C271D8E00FD52E5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				48256A132C2709F8001B9499 /* SignUpViewModel.swift */,
+				48AF64242C27142600FD52E5 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
