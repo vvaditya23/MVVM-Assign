@@ -120,7 +120,6 @@
 				486355EA2C262C3C007939F2 /* AppDelegate.swift */,
 				4820CAFC2C2316C8008B12B5 /* Assignment_1App.swift */,
 				48AF64262C271D7D00FD52E5 /* Views */,
-				486355EE2C2634AC007939F2 /* UIViewRepresentable.swift */,
 				48AF64272C271D8E00FD52E5 /* ViewModels */,
 				4820CB002C2316CA008B12B5 /* Assets.xcassets */,
 				4820CB022C2316CA008B12B5 /* Preview Content */,
@@ -166,6 +165,7 @@
 		48AF64272C271D8E00FD52E5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+
 				48AF64282C271EEC00FD52E5 /* UIViewRepresentable.swift */,
 				48256A132C2709F8001B9499 /* SignUpViewModel.swift */,
 				48AF64242C27142600FD52E5 /* LoginViewModel.swift */,
