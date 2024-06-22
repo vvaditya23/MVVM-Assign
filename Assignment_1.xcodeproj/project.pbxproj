@@ -23,6 +23,7 @@
 		486355EF2C2634B2007939F2 /* UIViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486355EE2C2634AC007939F2 /* UIViewRepresentable.swift */; };
 		486355F22C2637F6007939F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 486355F12C2637F6007939F2 /* GoogleService-Info.plist */; };
 		489DCF852C25CB590061C60B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DCF842C25CB530061C60B /* SignUpView.swift */; };
+		48AF64252C27142D00FD52E5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF64242C27142600FD52E5 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		486355F02C263687007939F2 /* Assignment-1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Assignment-1-Info.plist"; sourceTree = SOURCE_ROOT; };
 		486355F12C2637F6007939F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		489DCF842C25CB530061C60B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		48AF64242C27142600FD52E5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				489DCF842C25CB530061C60B /* SignUpView.swift */,
 				48256A132C2709F8001B9499 /* SignUpViewModel.swift */,
 				486355E32C262008007939F2 /* LoginView.swift */,
+				48AF64242C27142600FD52E5 /* LoginViewModel.swift */,
 				4820CB002C2316CA008B12B5 /* Assets.xcassets */,
 				4820CB022C2316CA008B12B5 /* Preview Content */,
 			);
@@ -297,6 +300,7 @@
 				4820CAFF2C2316C8008B12B5 /* WelcomeView.swift in Sources */,
 				486355E42C26200B007939F2 /* LoginView.swift in Sources */,
 				48256A142C2709FE001B9499 /* SignUpViewModel.swift in Sources */,
+				48AF64252C27142D00FD52E5 /* LoginViewModel.swift in Sources */,
 				486355EB2C262C40007939F2 /* AppDelegate.swift in Sources */,
 				4820CAFD2C2316C8008B12B5 /* Assignment_1App.swift in Sources */,
 				486355EF2C2634B2007939F2 /* UIViewRepresentable.swift in Sources */,
